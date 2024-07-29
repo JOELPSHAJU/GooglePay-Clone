@@ -10,8 +10,8 @@ class PaymentCard extends StatelessWidget {
     return Container(
       width: size.width * .3,
       margin: index % 2 == 0
-          ? EdgeInsets.only(right: 140, top: 15, left: 15)
-          : EdgeInsets.only(left: 140, top: 15, right: 15),
+          ? const EdgeInsets.only(right: 140, top: 15, left: 15)
+          : const EdgeInsets.only(left: 140, top: 15, right: 15),
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: Colors.white,
@@ -29,13 +29,13 @@ class PaymentCard extends StatelessWidget {
         children: [
           Text(
             index % 2 == 0 ? 'Payment to you' : 'Payment to Akhil S',
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w600,
             ),
           ),
-          SizedBox(height: 16),
-          Text(
+          const SizedBox(height: 16),
+          const Text(
             '₹4,000',
             style: TextStyle(
               fontSize: 24,
@@ -43,11 +43,11 @@ class PaymentCard extends StatelessWidget {
             ),
           ),
           h10,
-          Row(
+          const Row(
             children: [
               Icon(
                 Icons.check_circle,
-                color: const Color.fromARGB(255, 41, 137, 44),
+                color: Color.fromARGB(255, 41, 137, 44),
                 size: 20,
               ),
               SizedBox(width: 8),

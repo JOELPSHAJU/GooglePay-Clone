@@ -47,7 +47,7 @@ class BottomBar extends StatelessWidget {
             child: TextField(
               decoration: InputDecoration(
                 suffixIcon: const Icon(Icons.send),
-                hintText: 'Message...',
+                hintText: 'Message....',
                 contentPadding:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 12),
                 border: OutlineInputBorder(
